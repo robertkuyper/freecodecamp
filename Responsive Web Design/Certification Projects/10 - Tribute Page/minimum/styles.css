@@ -1,0 +1,8 @@
+img {
+/* req:8 */
+  max-width: 100%;
+  display: block;
+  height: auto;
+/* req:9 */
+  margin: 0 auto;
+}

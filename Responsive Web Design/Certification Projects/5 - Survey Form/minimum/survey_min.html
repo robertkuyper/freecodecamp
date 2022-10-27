@@ -1,0 +1,139 @@
+<!-- This is the minimum feasible solution to the Survey Project. This and a
+more thorough solution can be found at 
+https://github.com/robertkuyper/freecodecamp -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+<!-- req:1 -->
+		<h1 id="title">Survey Form</h1>
+<!-- req:2 -->
+		<p id="description">
+			Dummy Text
+		</p>
+<!-- req:3 -->
+		<form id="survey-form">
+			<div>
+<!-- req:10 -->
+				<label id="name-label" for="name">
+<!-- req:11 -->
+					Name
+				</label>
+<!-- req:4 -->
+				<input
+					type="text"
+					id="name"
+					placeholder="Tell us your name"
+					required
+				/>
+			</div>
+			<div>
+				<label id="email-label" for="email">
+<!-- req:11 -->
+					Email
+<!-- req:10 -->
+				</label>
+<!-- req:5 -->
+<!-- req:6 -->
+				<input
+					type="email"
+					id="email"
+					placeholder="Tell us your Email"
+					required
+				/>
+			</div>
+<!-- req:7 -->
+<!-- req:10 -->
+			<div>
+				<label id="number-label" for="number">
+<!-- req:11 -->
+					Age
+				</label>
+<!-- req:8 -->
+<!-- req:9 -->
+				<input
+					type="number"
+					id="number"
+					min="13"
+					max="120"
+					placeholder="Tell us your age"
+				/>
+			</div>
+<!-- req:12 -->
+			<div>
+				<label for="selection">
+					Select One
+				</label>
+				<select id="dropdown" required>
+					<option disabled selected value="">Select one</option>
+					<option value="drop_opt1">Option 1</option>
+					<option value="drop_opt1">Option 2</option>
+				</select>
+			</div>
+<!-- req:13 -->
+			<div>
+				<p>Yes or No</p>
+				<input
+					name="yn"
+					value="yes"
+					type="radio"
+				/> Yes
+				<input
+					name="yn"
+					value="no"
+					type="radio"
+					checked
+				/> No
+			</div>
+<!-- req:14 -->
+			<div>
+				<p>
+					Choose One
+				</p>
+				<label>
+					<input
+						value="opt1"
+						type="checkbox"
+					/> Option 1
+				</label>
+				<label>
+					<input
+						value="opt2"
+						type="checkbox"
+					/> Option 2
+				</label>
+				<label>
+					<input
+						value="opt3"
+						type="checkbox"
+					/> Option 3
+				</label>
+				<label>
+					<input
+						value="opt4"
+						type="checkbox"
+					/> Option 4
+				</label>
+			</div>
+<!-- req:15 -->
+			<div>
+				<label for="comment">
+					Any comments?
+				</label>
+				<textarea
+					id="comment"
+					placeholder="Enter a comment"
+				>
+				</textarea>
+			</div>
+<!-- req:16 -->
+			<div>
+				<button type="submit" id="submit">
+					Submit
+				</button>
+			</div>
+		</form>
+	</body>
+</html>

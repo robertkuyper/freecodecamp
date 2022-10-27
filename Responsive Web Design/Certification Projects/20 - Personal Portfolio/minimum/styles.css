@@ -1,0 +1,29 @@
+/* req:9 */
+@media (max-width: 40em) {
+  html {
+    font-size: 80%;
+  }
+}
+/* req:10 */
+#welcome-section{
+  height: 100vh;
+}
+/* req:11 */
+#navbar {
+  padding: 10px;
+  background-color: grey;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+ul li{
+  display: inline;
+  padding-right: 30px;
+}
+body{
+  margin-top: 100px;
+}

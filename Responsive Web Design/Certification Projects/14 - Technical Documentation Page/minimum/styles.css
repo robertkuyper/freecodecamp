@@ -1,0 +1,31 @@
+/* req: 14 */
+/* puts navbar at side and move main-doc over enough to not overlap */
+#navbar {
+  position: fixed;
+  min-width: 150px;
+  top: 0px;
+  left: 0px;
+  width: 150px;
+  height: 100%;
+}
+#main-doc {
+  position: absolute;
+  margin-left: 160px;
+}
+
+/* req: 14 */
+/* puts navbar at side and move main-doc down enough to not overlap */
+@media only screen and (max-width: 815px) {
+  #navbar {
+    position: absolute;
+    width: 100%;
+    max-height: 150px;
+    z-index: 1;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 160px;
+  }
+}
